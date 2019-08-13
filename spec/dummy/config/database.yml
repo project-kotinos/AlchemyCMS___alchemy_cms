@@ -15,6 +15,7 @@ postgresql: &postgresql
   <% end %>
   database: alchemy_cms_dummy_<%= Rails.env %>
   min_messages: ERROR
+  url: <%= ENV["DATABASE_URL"] %>
 
 defaults: &defaults
   pool: 5
