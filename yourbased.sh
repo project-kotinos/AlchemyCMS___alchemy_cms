@@ -11,9 +11,9 @@ export RAILS_ENV=test
 export RACK_ENV=test
 export MERB_ENV=test
 export JRUBY_OPTS="--server -Dcext.enabled=false -Xcompile.invokedynamic=false"
-apt-get update && apt-get install -y tzdata
+apt-get update && apt-get install -y tzdata chromium-chromedriver
 gem install bundler -v 2.0.1
-apt-get install chromium-chromedriver
+
 # before_install
 gem install bundler
 # install
